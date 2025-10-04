@@ -1,0 +1,245 @@
+body {
+  font-family: "Cinzel Decorative", serif;
+  background: url('./media/clutches.avif') no-repeat center center/cover;
+}
+
+.custom-navbar {
+  background: rgba(20, 20, 20, 0.9);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #FFD700 !important;
+}
+
+.navbar .nav-link:hover {
+  color: #fff !important;
+}
+
+.contact-hero {
+  padding: 50px 0;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+.contact-hero h1 {
+  margin-top: 40px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #FFD700;
+}
+
+.login-form {
+  background: #000000;
+  border: 1px solid #FFD700;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 50px;
+  color: #fff1b7;
+}
+
+.login-form h3 {
+  color: #FFD700;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.form-control {
+  background: #111;
+  border: 1px solid #FFD700;
+  color: #fff;
+}
+
+.form-control::placeholder {
+  color: #aaa;
+
+}
+
+.btn-gold {
+  background: linear-gradient(45deg, #FFD700, #e6b800);
+  color: #111;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+
+.btn-gold:hover {
+  background: linear-gradient(45deg, #e6b800, #FFD700);
+  transform: translateY(-2px);
+}
+
+.text-gold {
+  color: #FFD700;
+}
+
+.footer {
+  background: #111;
+  color: #ddd;
+  padding: 50px 20px 20px;
+  margin-top: 50px;
+  font-family: 'Cinzel Decorative', serif;
+}
+
+.footer h4, .footer h5 {
+  color: #FFD700;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin: 6px 0;
+}
+
+.footer-links a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #FFD700;
+}
+
+.footer-contact .social-icons a {
+  color: #ddd;
+  margin-right: 12px;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.footer-contact .social-icons a:hover {
+  color: #FFD700;
+}
+
+.footer hr {
+  border-top: 1px solid #333;
+  margin: 20px 0;
+}
+
+.footer .copyright {
+  font-size: 0.8rem;
+  color: #777;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Footer columns layout for tablet & mobile */
+@media (max-width: 991px) {
+  .footer .row {
+    text-align: center;
+  }
+
+  .footer .col-md-4 {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer .social-icons a {
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+
+  .footer h4, .footer h5 {
+    font-size: 1.1rem;
+  }
+
+  .footer p, .footer-links ul li {
+    font-size: 0.85rem;
+  }
+}
+
+
+/* Tablet screens (max-width: 991px) */
+@media (max-width: 991px) {
+  .login-form {
+    margin-top: 200px;
+    max-width: 350px;
+    padding: 30px;
+    margin-bottom: 200px;
+  }
+
+  .login-form h3 {
+    font-size: 1.8rem;
+  }
+
+  .form-control {
+    font-size: 0.95rem;
+    padding: 8px 12px;
+  }
+
+  .btn-gold {
+    font-size: 1rem;
+    padding: 8px 18px;
+  }
+
+  .contact-hero {
+    padding: 40px 0;
+  }
+
+  body {
+    background-size: cover;
+    background-position: center top;
+  }
+}
+
+/* Mobile screens (max-width: 767px) */
+@media (max-width: 767px) {
+  .login-form {
+    width: 90%;
+    max-width: 300px;
+    padding: 25px;
+  }
+
+  .login-form h3 {
+    font-size: 1.5rem;
+  }
+
+  .form-control {
+    font-size: 0.9rem;
+    padding: 7px 10px;
+  }
+
+  .btn-gold {
+    font-size: 0.95rem;
+    padding: 8px 15px;
+  }
+
+  .contact-hero {
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  body {
+    background-size: cover; /* ensures full bg image visible */
+    background-position: center top;
+  }
+
+  .navbar .navbar-brand {
+    font-size: 1.6rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+  }
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(238,186,46)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}

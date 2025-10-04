@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - House of Elegance</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./media/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="container">
+            <a class="navbar-brand fs-3" href="index.html">House of Elegance</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fs-5">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sell.html">Sell</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="contact-hero text-center">
+        <div class="container">
+            <h1>Contact Us</h1>
+        </div>
+    </header>
+
+    <!-- Contact Form + Info -->
+    <section class="contact-section ">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Form -->
+                <div class="col-md-7">
+                    <div class="contact-form p-4 shadow-lg rounded">
+                        <h3 class="mb-4">Send Us a Message</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="example@mail.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Message subject">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Your Message</label>
+                                <textarea class="form-control" id="message" rows="5"
+                                    placeholder="Write your message here"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-gold">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-5">
+                    <div class="contact-info p-4">
+                        <h3 class="mb-4">Get in Touch</h3>
+                        <p><i class="fa-solid fa-map-marker-alt me-2 text-gold"></i> 123 Royal Lane, Kochi, India</p>
+                        <p><i class="fa-solid fa-phone me-2 text-gold"></i> +91 98765 43210</p>
+                        <p><i class="fa-solid fa-envelope me-2 text-gold"></i> support@houseofelegance.com</p>
+
+                        <h4 class="mt-4">Follow Us</h4>
+                        <div class="social-icons mt-3">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <!-- Brand & Tagline -->
+                <div class="col-md-4 footer-brand">
+                    <h4>House of Elegance</h4>
+                    <p>Timeless Beauty. Majestic Charm. Regal Legacy.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4 footer-links">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#categories">Shop</a></li>
+                        <li><a href="sell.html">Sell</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social & Contact -->
+                <div class="col-md-4 footer-contact">
+                    <h5>Connect</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                    </div>
+                    <p>Email: support@houseofelegance.com</p>
+                </div>
+
+            </div>
+
+            <hr>
+            <p class="text-center copyright">
+                &copy; 2025 House of Elegance. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

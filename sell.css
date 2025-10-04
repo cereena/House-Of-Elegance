@@ -1,0 +1,316 @@
+body {
+  font-family: "Cinzel Decorative", serif;
+  background-color: #000000; /* deep royal black */
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Cinzel Decorative", serif;
+  color: #f2cf6f; /* royal gold */
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: transparent !important;
+  box-shadow: none;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .btn-outline-light {
+  color: #EAD7B7 !important;
+  font-family: "Cinzel Decorative", serif;
+}
+
+.navbar .btn-outline-light {
+  border-color: white;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(238,186,46)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* -------------------- Hero Section -------------------- */
+.sell-hero {
+  background: url('./media/clutches.avif') center/cover no-repeat;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  position: relative;
+}
+
+.sell-hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.sell-hero h1 {
+  position: relative;
+  z-index: 2;
+  font-size: 2.5rem;
+}
+
+.sell-hero p {
+  position: relative;
+  z-index: 2;
+  font-size: 1.5rem;
+  margin: 0 200px;
+  line-height: 1.5;
+}
+
+/* -------------------- Sell Form -------------------- */
+.sell-form {
+  background: rgba(0,0,0);
+  border: 2px solid #f2cf6f;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.7);
+  color:#e6b800;
+}
+
+.sell-form label {
+  font-weight: 600;
+  color: #f2cf6f;
+}
+
+.sell-form .form-control {
+  background: #2c0d0d;
+  border: 1px solid #FFD700;
+  color: #deb658;
+}
+
+.sell-form .form-control:focus {
+  border-color: #e6c300;
+  box-shadow: 0 0 6px rgba(255,215,0,0.7);
+}
+
+input[type="file"]::file-selector-button {
+  background: linear-gradient(45deg, #FFD700, #e6b800);
+  color: #111;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background: linear-gradient(45deg, #e6b800, #FFD700);
+  transform: translateY(-2px);
+}
+
+.sell-form ::placeholder {
+  color: #ccc;
+  opacity: 1;
+  font-style: italic;
+}
+
+.sell-form .btn {
+  background: linear-gradient(45deg, #fb7100, #e6b800);
+  color: #000000;
+  border: none;
+  font-weight: bold;
+  margin-left: 250px;
+  transition: all 0.3s ease;
+}
+
+.sell-form .btn:hover {
+  background: linear-gradient(45deg, #e6b800, #fb7100);
+  transform: translateY(-2px);
+}
+
+/* -------------------- Icons -------------------- */
+.fas {
+  color: #f2cf6f;
+}
+
+/* -------------------- Info Section -------------------- */
+.info-section {
+  background: #fffefe;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* -------------------- Footer -------------------- */
+.footer {
+  background: #111;
+  color: #ddd;
+  padding: 50px 20px 20px;
+  margin-top: 50px;
+}
+
+.footer h4,
+.footer h5 {
+  color: #FFD700;
+  font-family: 'Cinzel', serif;
+  margin-bottom: 15px;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #aaa;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 8px 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #ddd;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #FFD700;
+}
+
+.social-icons a {
+  font-size: 1.3rem;
+  margin-right: 12px;
+  color: #ddd;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #FFD700;
+}
+
+.footer hr {
+  border-top: 1px solid #333;
+  margin: 20px 0;
+}
+
+.footer .copyright {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+
+/* Medium devices (tablets, 768px - 991px) */
+@media (max-width: 991px) {
+  .sell-hero h1 {
+    font-size: 2rem;
+    margin: 0 40px;
+  }
+
+  .sell-hero p {
+    font-size: 1.2rem;
+    margin: 0 30px;
+  }
+
+  .sell-form .btn {
+    margin-left: 30px;
+    width: 80%;
+  }
+
+  .sell-form {
+    padding: 25px;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    font-size: 1rem;
+  }
+}
+
+/* Small devices (mobile, 576px - 767px) */
+@media (max-width: 767px) {
+  .sell-hero {
+    padding: 60px 15px;
+  }
+
+  .sell-hero h1 {
+    font-size: 1.8rem;
+    margin: 0 20px;
+  }
+
+  .sell-hero p {
+    font-size: 1rem;
+    margin: 0 10px;
+  }
+
+  .sell-form {
+    padding: 20px;
+  }
+
+  .sell-form .form-control {
+    font-size: 0.9rem;
+  }
+
+  .sell-form .btn {
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+
+  .navbar .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    font-size: 0.95rem;
+    padding: 8px 0;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer .social-icons {
+    justify-content: center;
+  }
+}
+
+/* Extra small devices (phones, <576px) */
+@media (max-width: 575px) {
+  .sell-hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .sell-hero p {
+    font-size: 0.9rem;
+    margin: 0 10px;
+  }
+
+  .sell-form label,
+  .sell-form input,
+  .sell-form textarea {
+    font-size: 0.85rem;
+  }
+
+  .sell-form .btn {
+    font-size: 0.9rem;
+    padding: 10px 0;
+  }
+
+  .navbar .navbar-brand {
+    font-size: 1.3rem;
+  }
+
+  .navbar .navbar-toggler {
+    border: none;
+  }
+}

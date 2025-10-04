@@ -1,309 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chic & Cute - Women Fashion</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    body {
-        font-family:'Times New Roman', Times, serif;
-    }
-    .hero {
-      background: url('./media/dressmain.png') no-repeat center center fixed;
-      background-size: cover;
-      height: 80vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 2px 2px 5px rgba(252, 227, 3, 0.7);
-    }
-    .hero h1 {
-      font-size: 3rem;
-      margin-top: 0px;
-    }
-    .hero p{
-      text-align: justify;
-      padding: 30px 100px;
-    }
-    .category img {
-      height: 300px;
-      width: 250px;
-      object-fit: cover;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-    footer {
-      background: #222;
-      color: #eee;
-      padding: 40px 0;
-    }
-    .map {
-      height: 300px;
-      width: 100%;
-      border-radius: 8px;
-    }
-    .category a {
-      text-decoration: none;
-      color: inherit;
-    }
-    .container h2{
-        color:aliceblue;
-        text-shadow: 2px 2px 5px rgba(253, 237, 64, 0.7);
-    }
-    .category h5 {
-      color:white;
-    } 
-    .container h3{
-      color: black;
-    }
-     .card {
-        background-color: transparent;
-        margin-top: 20px;
-     }
-    .card img{
-        width: 100%; 
-        height: 300px;
-        object-fit:cover;
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="./media/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="dress.css">
 </head>
+
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
     <div class="container">
-      <a class="navbar-brand fs-4" href="index.html" >House of Elegance</a>
+      <a class="navbar-brand fs-4" href="index.html">House of Elegance</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto fs-4">
-          <li class="nav-item"><a class="nav-link" href="#categories">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="#collection">Shop</a></li>
           <li class="nav-item"><a class="nav-link" href="sell.html">Sell</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <header class="hero text-center">
-    <div>
-      <h1>House of Elegance</h1>
-      <p>Step into a world where elegance reigns. 
-        Crowned in Grace is your royal wardrobe haven — 
-        curated for women who embrace timeless beauty 
-        and majestic charm. Discover opulent dresses, 
-        heirloom-inspired jewelry, regal footwear, 
-        luxe bags, and graceful accessories that make
-         every moment feel like a royal occasion. 
-         Because you don’t just wear fashion — you wear a legacy.</p>
+    <div class="hero-content">
+      <h1>Majestic Silhouettes</h1>
+      <a href="#collection" class="btn btn-gold mt-3">Shop Now</a>
     </div>
   </header>
 
-<div class="d-flex flex-wrap" style="gap: 20px; margin-left: 30px;">
-  <!-- Card 1 -->
-  <div class="card" style="width: 18rem;">
-    <img src="./media/dress1.jpg" class="card-img-top" alt="..." >
-    <div class="card-body">
-      <h5 class="card-title">Royal Gown Elegance</h5>
-      <p class="card-text">Luxurious fabrics, exquisite design, truly regal.</p>
-      <h5 class="card-title text-decoration-line-through text-danger">$100</h5>
-      <h4 class="card-title text-success fs-x"> Now $80 only!!</h4>
-      <a href="#" class="btn btn-outline-dark">Buy Now</a>
-      <a href="#" class="btn btn-outline-dark ">Add to cart</a>
-      <button class="btn btn-outline-danger" title="Add to Wishlist">
-        <i class="far fa-heart"></i>
-      </button>
+
+  <section class="py-5 bg-black" id="collection">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Royal Collection</h2>
+      <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="luxury-card">
+            <img src="./media/dress1.jpg" class="card-img-top" alt="Royal Dress">
+            <div class="card-body text-center">
+              <h5 class="card-title">Emerald Elegance</h5>
+              <p class="price">₹ 8,999</p>
+              <p class="card-text">Handcrafted with royal silk, designed for timeless charm.</p>
+              <div class="card-actions">
+                <button class="btn btn-gold">Add to Cart</button>
+                <button class="btn-like"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="luxury-card">
+            <img src="./media/dress2.jpg" class="card-img-top" alt="Royal Dress">
+            <div class="card-body text-center">
+              <h5 class="card-title">Golden Majesty</h5>
+              <p class="price">₹ 12,499</p>
+              <p class="card-text">Exquisite golden embroidery for regal evenings.</p>
+              <div class="card-actions">
+                <button class="btn btn-gold">Add to Cart</button>
+                <button class="btn-like"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="luxury-card">
+            <img src="./media/dress3.jpg" class="card-img-top" alt="Royal Dress">
+            <div class="card-body text-center">
+              <h5 class="card-title">Crimson Royale</h5>
+              <p class="price">₹ 15,999</p>
+              <p class="card-text">Luxurious velvet that radiates pure royalty.</p>
+              <div class="card-actions">
+                <button class="btn btn-gold">Add to Cart</button>
+                <button class="btn-like"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="luxury-card">
+            <img src="./media/dress4.jpg" class="card-img-top" alt="Royal Dress">
+            <div class="card-body text-center">
+              <h5 class="card-title">Emerald Elegance</h5>
+              <p class="price">₹ 8,999</p>
+              <p class="card-text">Handcrafted with royal silk, designed for timeless charm.</p>
+              <div class="card-actions">
+                <button class="btn btn-gold">Add to Cart</button>
+                <button class="btn-like"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="luxury-card">
+            <img src="./media/dress5.jpg" class="card-img-top" alt="Royal Dress">
+            <div class="card-body text-center">
+              <h5 class="card-title">Golden Majesty</h5>
+              <p class="price">₹ 12,499</p>
+              <p class="card-text">Exquisite golden embroidery for regal evenings.</p>
+              <div class="card-actions">
+                <button class="btn btn-gold">Add to Cart</button>
+                <button class="btn-like"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="luxury-card">
+            <img src="./media/dress6.jpg" class="card-img-top" alt="Royal Dress">
+            <div class="card-body text-center">
+              <h5 class="card-title">Crimson Royale</h5>
+              <p class="price">₹ 15,999</p>
+              <p class="card-text">Luxurious velvet that radiates pure royalty.</p>
+              <div class="card-actions">
+                <button class="btn btn-gold">Add to Cart</button>
+                <button class="btn-like"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="luxury-card">
+            <img src="./media/dress7.jpg" class="card-img-top" alt="Royal Dress">
+            <div class="card-body text-center">
+              <h5 class="card-title">Emerald Elegance</h5>
+              <p class="price">₹ 8,999</p>
+              <p class="card-text">Handcrafted with royal silk, designed for timeless charm.</p>
+              <div class="card-actions">
+                <button class="btn btn-gold">Add to Cart</button>
+                <button class="btn-like"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="luxury-card">
+            <img src="./media/dress8.jpg" class="card-img-top" alt="Royal Dress">
+            <div class="card-body text-center">
+              <h5 class="card-title">Golden Majesty</h5>
+              <p class="price">₹ 12,499</p>
+              <p class="card-text">Exquisite golden embroidery for regal evenings.</p>
+              <div class="card-actions">
+                <button class="btn btn-gold">Add to Cart</button>
+                <button class="btn-like"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="luxury-card">
+            <img src="./media/dress9.jpg" class="card-img-top" alt="Royal Dress">
+            <div class="card-body text-center">
+              <h5 class="card-title">Crimson Royale</h5>
+              <p class="price">₹ 15,999</p>
+              <p class="card-text">Luxurious velvet that radiates pure royalty.</p>
+              <div class="card-actions">
+                <button class="btn btn-gold">Add to Cart</button>
+                <button class="btn-like"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="luxury-card">
+            <img src="./media/dress10.jpg" class="card-img-top" alt="Royal Dress">
+            <div class="card-body text-center">
+              <h5 class="card-title">Emerald Elegance</h5>
+              <p class="price">₹ 8,999</p>
+              <p class="card-text">Handcrafted with royal silk, designed for timeless charm.</p>
+              <div class="card-actions">
+                <button class="btn btn-gold">Add to Cart</button>
+                <button class="btn-like"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="luxury-card">
+            <img src="./media/dress11.jpg" class="card-img-top" alt="Royal Dress">
+            <div class="card-body text-center">
+              <h5 class="card-title">Golden Majesty</h5>
+              <p class="price">₹ 12,499</p>
+              <p class="card-text">Exquisite golden embroidery for regal evenings.</p>
+              <div class="card-actions">
+                <button class="btn btn-gold">Add to Cart</button>
+                <button class="btn-like"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="luxury-card">
+            <img src="./media/dress12.jpg" class="card-img-top" alt="Royal Dress">
+            <div class="card-body text-center">
+              <h5 class="card-title">Crimson Royale</h5>
+              <p class="price">₹ 15,999</p>
+              <p class="card-text">Luxurious velvet that radiates pure royalty.</p>
+              <div class="card-actions">
+                <button class="btn btn-gold">Add to Cart</button>
+                <button class="btn-like"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 1 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="luxury-card">
+            <img src="./media/dress1.jpg" class="card-img-top" alt="Royal Dress">
+            <div class="card-body text-center">
+              <h5 class="card-title">Emerald Elegance</h5>
+              <p class="price">₹ 8,999</p>
+              <p class="card-text">Handcrafted with royal silk, designed for timeless charm.</p>
+              <div class="card-actions">
+                <button class="btn btn-gold">Add to Cart</button>
+                <button class="btn-like"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="luxury-card">
+            <img src="./media/dress2.jpg" class="card-img-top" alt="Royal Dress">
+            <div class="card-body text-center">
+              <h5 class="card-title">Golden Majesty</h5>
+              <p class="price">₹ 12,499</p>
+              <p class="card-text">Exquisite golden embroidery for regal evenings.</p>
+              <div class="card-actions">
+                <button class="btn btn-gold">Add to Cart</button>
+                <button class="btn-like"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="luxury-card">
+            <img src="./media/dress3.jpg" class="card-img-top" alt="Royal Dress">
+            <div class="card-body text-center">
+              <h5 class="card-title">Crimson Royale</h5>
+              <p class="price">₹ 15,999</p>
+              <p class="card-text">Luxurious velvet that radiates pure royalty.</p>
+              <div class="card-actions">
+                <button class="btn btn-gold">Add to Cart</button>
+                <button class="btn-like"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Extra Card (Visible only on tablets) -->
+        <div class="col-12 col-sm-6 col-lg-4 d-none d-md-block d-lg-none">
+          <div class="luxury-card">
+            <img src="./media/dress12.jpg" class="card-img-top" alt="Exclusive Tablet Card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Tablet Exclusive</h5>
+              <p class="price">₹ 4,999</p>
+              <p class="card-text">This special card shows only on tablet screens.</p>
+              <div class="card-actions">
+                <button class="btn btn-gold">Add to Cart</button>
+                <button class="btn-like"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Card 2 -->
-  <div class="card" style="width: 18rem;">
-    <img src="./media/dress2.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Royal Gown Elegance</h5>
-      <p class="card-text">Luxurious fabrics, exquisite design, truly regal.</p>
-      <h5 class="card-title text-decoration-line-through text-danger">$250</h5>
-      <h4 class="card-title text-success fs-x"> Now $100 only!!</h4>
-      <a href="#" class="btn btn-outline-dark">Buy Now</a>
-      <a href="#" class="btn btn-outline-dark ">Add to cart</a>
-      <button class="btn btn-outline-danger" title="Add to Wishlist">
-        <i class="far fa-heart"></i>
-      </button>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+
+        <!-- Brand & Tagline -->
+        <div class="col-md-4 footer-brand">
+          <h4>House of Elegance</h4>
+          <p>Timeless Beauty. Majestic Charm. Regal Legacy.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-4 footer-links">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#categories">Shop</a></li>
+            <li><a href="sell.html">Sell</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </div>
+
+        <!-- Social & Contact -->
+        <div class="col-md-4 footer-contact">
+          <h5>Connect</h5>
+          <div class="social-icons">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+          </div>
+          <p>Email: support@houseofelegance.com</p>
+        </div>
+
+      </div>
+
+      <hr>
+      <p class="text-center copyright">
+        &copy; 2025 House of Elegance. All Rights Reserved.
+      </p>
     </div>
-  </div>
-
-  <!-- Card 3 -->
-  <div class="card" style="width: 18rem;">
-    <img src="./media/dress3.jpg" class="card-img-top" alt="..." >
-    <div class="card-body">
-      <h5 class="card-title">Royal Gown Elegance</h5>
-      <p class="card-text">Luxurious fabrics, exquisite design, truly regal.</p>
-      <h5 class="card-title text-decoration-line-through text-danger">$100</h5>
-      <h4 class="card-title text-success fs-x"> Now $80 only!!</h4>
-      <a href="#" class="btn btn-outline-dark">Buy Now</a>
-      <a href="#" class="btn btn-outline-dark ">Add to cart</a>
-      <button class="btn btn-outline-danger" title="Add to Wishlist">
-        <i class="far fa-heart"></i>
-      </button>
-    </div>
-  </div>
-
-  <!-- Card 4 -->
-  <div class="card" style="width: 18rem;">
-    <img src="./media/dress4.jpg" class="card-img-top" alt="..." >
-    <div class="card-body">
-      <h5 class="card-title">Royal Gown Elegance</h5>
-      <p class="card-text">Luxurious fabrics, exquisite design, truly regal.</p>
-      <h5 class="card-title text-decoration-line-through text-danger">$250</h5>
-      <h4 class="card-title text-success fs-x"> Now $100 only!!</h4>
-      <a href="#" class="btn btn-outline-dark">Buy Now</a>
-      <a href="#" class="btn btn-outline-dark ">Add to cart</a>
-      <button class="btn btn-outline-danger" title="Add to Wishlist">
-        <i class="far fa-heart"></i>
-      </button>
-    </div>
-  </div>
-
-  <!-- Card 5 -->
-  <div class="card" style="width: 18rem;">
-    <img src="./media/dress5.jpg" class="card-img-top" alt="..." >
-    <div class="card-body">
-      <h5 class="card-title">Royal Gown Elegance</h5>
-      <p class="card-text">Luxurious fabrics, exquisite design, truly regal.</p>
-      <h5 class="card-title text-decoration-line-through text-danger">$100</h5>
-      <h4 class="card-title text-success fs-x"> Now $80 only!!</h4>
-      <a href="#" class="btn btn-outline-dark">Buy Now</a>
-      <a href="#" class="btn btn-outline-dark ">Add to cart</a>
-      <button class="btn btn-outline-danger" title="Add to Wishlist">
-        <i class="far fa-heart"></i>
-      </button>
-    </div>
-  </div>
-
-  <!-- Card 6 -->
-  <div class="card" style="width: 18rem;">
-    <img src="./media/dress6.jpg" class="card-img-top" alt="..." >
-    <div class="card-body">
-      <h5 class="card-title">Royal Gown Elegance</h5>
-      <p class="card-text">Luxurious fabrics, exquisite design, truly regal.</p>
-      <h5 class="card-title text-decoration-line-through text-danger">$250</h5>
-      <h4 class="card-title text-success fs-x"> Now $100 only!!</h4>
-      <a href="#" class="btn btn-outline-dark">Buy Now</a>
-      <a href="#" class="btn btn-outline-dark ">Add to cart</a>
-      <button class="btn btn-outline-danger" title="Add to Wishlist">
-        <i class="far fa-heart"></i>
-      </button>
-    </div>
-  </div>
-
-  <!-- Card 7 -->
-  <div class="card" style="width: 18rem;">
-    <img src="./media/dress7.jpg" class="card-img-top" alt="..." >
-    <div class="card-body">
-      <h5 class="card-title">Royal Gown Elegance</h5>
-      <p class="card-text">Luxurious fabrics, exquisite design, truly regal.</p>
-      <h5 class="card-title text-decoration-line-through text-danger">$100</h5>
-      <h4 class="card-title text-success fs-x"> Now $80 only!!</h4>
-      <a href="#" class="btn btn-outline-dark">Buy Now</a>
-      <a href="#" class="btn btn-outline-dark ">Add to cart</a>
-      <button class="btn btn-outline-danger" title="Add to Wishlist">
-        <i class="far fa-heart"></i>
-      </button>
-    </div>
-  </div>
-
-  <!-- Card 8 -->
-  <div class="card" style="width: 18rem;">
-    <img src="./media/dress8.jpg" class="card-img-top" alt="..." >
-    <div class="card-body">
-      <h5 class="card-title">Royal Gown Elegance</h5>
-      <p class="card-text">Luxurious fabrics, exquisite design, truly regal.</p>
-      <h5 class="card-title text-decoration-line-through text-danger">$250</h5>
-      <h4 class="card-title text-success fs-x"> Now $100 only!!</h4>
-      <a href="#" class="btn btn-outline-dark">Buy Now</a>
-      <a href="#" class="btn btn-outline-dark ">Add to cart</a>
-      <button class="btn btn-outline-danger" title="Add to Wishlist">
-        <i class="far fa-heart"></i>
-      </button>
-    </div>
-  </div>
-
-  <!-- Card 9 -->
-  <div class="card" style="width: 18rem;">
-    <img src="./media/dress9.jpg" class="card-img-top" alt="..." >
-    <div class="card-body">
-      <h5 class="card-title">Royal Gown Elegance</h5>
-      <p class="card-text">Luxurious fabrics, exquisite design, truly regal.</p>
-      <h5 class="card-title text-decoration-line-through text-danger">$100</h5>
-      <h4 class="card-title text-success fs-x"> Now $80 only!!</h4>
-      <a href="#" class="btn btn-outline-dark">Buy Now</a>
-      <a href="#" class="btn btn-outline-dark ">Add to cart</a>
-      <button class="btn btn-outline-danger" title="Add to Wishlist">
-        <i class="far fa-heart"></i>
-      </button>
-    </div>
-  </div>
-
-  <!-- Card 10 -->
-  <div class="card" style="width: 18rem;">
-    <img src="./media/dress10.jpg" class="card-img-top" alt="..." >
-    <div class="card-body">
-      <h5 class="card-title">Royal Gown Elegance</h5>
-      <p class="card-text">Luxurious fabrics, exquisite design, truly regal.</p>
-      <h5 class="card-title text-decoration-line-through text-danger">$250</h5>
-      <h4 class="card-title text-success fs-x"> Now $100 only!!</h4>
-      <a href="#" class="btn btn-outline-dark">Buy Now</a>
-      <a href="#" class="btn btn-outline-dark ">Add to cart</a>
-      <button class="btn btn-outline-danger" title="Add to Wishlist">
-        <i class="far fa-heart"></i>
-      </button>
-    </div>
-  </div>
-
-  <!-- Card 11 -->
-  <div class="card" style="width: 18rem;">
-    <img src="./media/dress11.jpg" class="card-img-top" alt="..." >
-    <div class="card-body">
-      <h5 class="card-title">Royal Gown Elegance</h5>
-      <p class="card-text">Luxurious fabrics, exquisite design, truly regal.</p>
-      <h5 class="card-title text-decoration-line-through text-danger">$100</h5>
-      <h4 class="card-title text-success fs-x"> Now $80 only!!</h4>
-      <a href="#" class="btn btn-outline-dark">Buy Now</a>
-      <a href="#" class="btn btn-outline-dark ">Add to cart</a>
-      <button class="btn btn-outline-danger" title="Add to Wishlist">
-        <i class="far fa-heart"></i>
-      </button>
-    </div>
-  </div>
-
-    <!-- Card 12 -->
-  <div class="card" style="width: 18rem;">
-    <img src="./media/dress12.jpg" class="card-img-top" alt="..." >
-    <div class="card-body">
-      <h5 class="card-title">Royal Gown Elegance</h5>
-      <p class="card-text">Luxurious fabrics, exquisite design, truly regal.</p>
-      <h5 class="card-title text-decoration-line-through text-danger">$250</h5>
-      <h4 class="card-title text-success fs-x"> Now $100 only!!</h4>
-      <a href="#" class="btn btn-outline-dark">Buy Now</a>
-      <a href="#" class="btn btn-outline-dark ">Add to cart</a>
-      <button class="btn btn-outline-danger" title="Add to Wishlist">
-        <i class="far fa-heart"></i>
-      </button>
-    </div>
-  </div>
-</div>
-
-  
-
-  
-
-  <footer class="text-center">
-    <p>&copy; 2025 Chic & Cute. All rights reserved.</p>
   </footer>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

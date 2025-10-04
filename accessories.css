@@ -1,0 +1,364 @@
+.cinzel-decorative-bold {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.cinzel-decorative-regular {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.custom-navbar {
+  background: linear-gradient(90deg, rgba(255, 177, 82, 0.4), rgba(255, 177, 82, 0.4));        /* adds soft frosted effect */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5); /* elegant shadow */
+}
+.navbar {
+    position: absolute;
+    /* instead of fixed */
+    font-size: 2rem;
+    font-weight: 600;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+   color: #ffc400 !important; /* golden touch */
+    /* force transparent */
+    box-shadow: none;
+    /* remove shadow if any */
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .btn-outline-light {
+    color: #2c0d0d!important;
+    /* force white text */
+    font-family: "Cinzel Decorative", serif;
+    
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ee732b; 
+}
+
+.navbar .btn-outline-light {
+    border-color: white;
+}
+
+body {
+    font-family: "Cinzel Decorative", serif;
+    background-color: #510000;
+}
+
+.hero {
+    background: url('./media/accessories.avif') no-repeat center center;
+    background-size: cover;
+    background-color: #eeba2b;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(57, 1, 1);
+    text-align: center;       
+    text-shadow: 2px 2px 5px rgba(252, 227, 3, 0.7);
+}
+
+.hero h1 {
+    margin-bottom: 20px; 
+}
+
+
+.hero .btn-gold {
+    background: linear-gradient(45deg, #eeba2b, #d4af37);
+    color: black;
+    font-weight: 600;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    /* spaces button below heading */
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.hero .btn-gold:hover {
+    background: linear-gradient(45deg, #d4af37, #eeba2b);
+    transform: translateY(-2px);
+}
+
+.luxury-card {
+    background-color: #510000;
+    border: 2px solid #d4af37;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    transition: all 0.4s ease;
+}
+
+.luxury-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 2px solid #d4af37;
+}
+
+.luxury-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+}
+
+.luxury-card .card-body {
+    padding: 20px;
+}
+
+.luxury-card .card-title {
+    font-family: "Cinzel Decorative", serif;
+    color: #eeba2b;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.luxury-card .price {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.luxury-card .card-text {
+    color: #ddd;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-gold {
+    background: linear-gradient(45deg, #cb4000, #d4af37);
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+    background: linear-gradient(45deg, #d4af37, #eeba2b);
+    transform: translateY(-2px);
+}
+
+.btn-like {
+    background: transparent;
+    border: 2px solid #eeba2b;
+    color: #eeba2b;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.btn-like:hover {
+    background: #eeba2b;
+    color: #111;
+}
+
+.footer {
+    background: #111;
+    /* deep black */
+    color: #ddd;
+    padding: 50px 20px 20px;
+    margin-top: 50px;
+}
+
+.footer h4,
+.footer h5 {
+    color: #FFD700;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #aaa;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #ddd;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #FFD700;
+}
+
+.social-icons a {
+    font-size: 1.3rem;
+    margin-right: 12px;
+    color: #ddd;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #FFD700;
+}
+
+.footer hr {
+    border-top: 1px solid #333;
+    margin: 20px 0;
+}
+
+.footer .copyright {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+
+/* Large tablets (≤ 1200px) */
+@media (max-width: 1200px) {
+  .luxury-card img {
+    height: 400px;
+  }
+}
+
+/* Tablets (≤ 992px) */
+@media (max-width: 992px) {
+  .navbar {
+    font-size: 1.5rem;
+  }
+
+  .hero {
+    height: 70vh;
+    padding: 40px 15px;
+    text-align: center;
+  }
+
+  .hero .btn-gold {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .luxury-card img {
+    height: 400px;
+  }
+
+  .luxury-card .card-title {
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile (≤ 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    font-size: 1.2rem;
+  }
+
+  .navbar-nav {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 8px;
+    padding: 10px 0;
+  }
+
+  .hero {
+    height: 60vh;
+    text-align: center;
+    background-position: center;
+  }
+
+  .hero .btn-gold {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
+
+  .luxury-card img {
+    height: 300px;
+  }
+
+  .luxury-card .card-body {
+    padding: 15px;
+  }
+
+  .luxury-card .card-title {
+    font-size: 1.1rem;
+  }
+
+  .luxury-card .price {
+    font-size: 1rem;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer .col-md-4 {
+    margin-bottom: 20px;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
+}
+
+/* Small phones (≤ 480px) */
+@media (max-width: 480px) {
+  .navbar {
+    font-size: 1rem;
+  }
+
+  .hero {
+    height: 50vh;
+    padding: 20px;
+  }
+
+  .hero .btn-gold {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  .luxury-card img {
+    height: 380px;
+  }
+
+  .luxury-card .card-title {
+    font-size: 1rem;
+  }
+
+  .luxury-card .price {
+    font-size: 0.9rem;
+  }
+
+  .luxury-card .card-text {
+    font-size: 0.8rem;
+  }
+
+  .footer h4, .footer h5 {
+    font-size: 1rem;
+  }
+
+  .footer p {
+    font-size: 0.8rem;
+  }
+}
